@@ -37,12 +37,13 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .firstWoman {
-  min-width: 30%;
+  min-width: 250px;
   position: absolute;
-  top: 6%;
+  top: 7%;
   left: 50%;
   transform: translateX(-50%);
 }
