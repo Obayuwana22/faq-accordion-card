@@ -43,7 +43,7 @@ body {
 .firstWoman {
   min-width: 250px;
   position: absolute;
-  top: 7%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -118,24 +118,16 @@ body {
     justify-content: center;
     padding: 10em 2em;
   }
-
   .header {
     text-align: left;
   }
-
   .faqBlock {
     margin-right: 12em;
     border-bottom: 1px solid var(--dividers);
   }
-
   .arrow {
     margin-left: 9em;
   }
-
-  /* .faqParagraph {
-    margin-right: 7em;
-  } */
-
   .subParagraph {
     margin-right: 2em;
   }
