@@ -1,0 +1,141 @@
+:root {
+  --text-Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --text-Soft-red: hsl(14, 88%, 65%);
+
+  --bgg-Soft-violet: hsl(273, 75%, 66%);
+  --bgg-Soft-blue: hsl(240, 73%, 65%);
+
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --dividers: hsl(240, 5%, 91%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(var(--bgg-Soft-violet), var(--text-Soft-red));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 15em;
+}
+
+.container {
+  background: white;
+  box-shadow: 0px 10px 50px -20px var(--text-Very-dark-desaturated-blue);
+  width: 375px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstWoman {
+  min-width: 30%;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main {
+  padding: 13em 2em 5em;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 4rem;
+}
+
+.faqBlock {
+  border-bottom: 1px solid var(--dividers);
+}
+
+.mainFaq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+
+.faqParagraph {
+  font-size: 1.5rem;
+  color: var(--Very-dark-grayish-blue);
+  transition: color 0.2s;
+}
+
+.faqParagraph:hover {
+  color: var(--text-Soft-red);
+}
+
+.subParagraph {
+  margin-bottom: 1.5em;
+  font-size: 1.3rem;
+  color: var(--Dark-grayish-blue);
+  margin-right: 5em;
+}
+
+.hidden {
+  display: none;
+  color: var(--Dark-grayish-blue);
+}
+
+.selected {
+  color: var(--text-Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 0 10em;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+  .firstWoman {
+    min-width: 50%;
+    position: relative;
+    top: 0%;
+    left: 16%;
+    display: flex;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10em 2em;
+  }
+
+  .header {
+    text-align: left;
+  }
+
+  .faqBlock {
+    margin-right: 12em;
+    border-bottom: 1px solid var(--dividers);
+  }
+
+  .arrow {
+    margin-left: 9em;
+  }
+
+  /* .faqParagraph {
+    margin-right: 7em;
+  } */
+
+  .subParagraph {
+    margin-right: 2em;
+  }
+}
